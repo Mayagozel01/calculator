@@ -30,6 +30,5 @@ The main file (usually labelled main.scss) should be the only Sass file from the
 
 ## If you are looking to use the 7-1 pattern, there is a [boilerplate](https://github.com/KittyGiraudel/sass-boilerplate) ready on GitHub. It should contain everything you need to get started with this architecture.
 [shu yerde sass file-lary tertiplemek uchin gid](https://sass-guidelin.es/#architecture)
-[counter](https://github.com/Mayagozel01.m.pipedream.net)
 autoprefixer is part of postcss-cli 
 autoprefixer web-kit awtomatki goshmak un gerek
