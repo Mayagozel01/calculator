@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculator-mminam</title>
+</head>
+<body>
+<div class="calculator d-flex col">
+    <div class="calculating d-flex col">
+        <div class="operating color-white-1 font-size-1"><p id="operating">0</p></div>
+        <div class="answer color-white-1 font-size-2" id="answer">0</div>
+        <div class="modes d-flex">
+            <span class="history"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8.5" cy="8.5" r="7.75" stroke="#838383" stroke-width="1.5"/>
+                <line x1="8.5" y1="3" x2="8.5" y2="9" stroke="#838383"/>
+                <line x1="13" y1="8.5" x2="8" y2="8.5" stroke="#838383"/>
+                </svg>
+                </span>
+                <span class="ruler">
+                    <svg width="42" height="21" viewBox="0 0 42 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1.25" y="1.25" width="39.5" height="18.5" rx="2.75" fill="black" stroke="#838383" stroke-width="1.5"/>
+                        <path d="M6 2H8V11H6V2Z" fill="#838383"/>
+                        <rect x="20" y="2" width="2" height="9" fill="#838383"/>
+                        <rect x="13" y="2" width="2" height="7" fill="#838383"/>
+                        <rect x="27" y="2" width="2" height="7" fill="#838383"/>
+                        <rect x="34" y="2" width="2" height="9" fill="#838383"/>
+                        </svg>
+                        
+                </span>
+                <span class="expand">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1.25" y="1.25" width="18.5" height="18.5" rx="2.75" fill="black" stroke="#838383" stroke-width="1.5"/>
+                        <path d="M6.35529 8.93821L8.07404 2.72727H9.25302L7.13299 10H6.17773L6.35529 8.93821ZM5.77646 6.32102L6.60387 9.02344L6.71751 10H5.86523L4.5158 6.32102H5.77646ZM3.80558 7.52131V6.32102H5.68768V7.52131H3.80558Z" fill="#838383"/>
+                        <path d="M16.9847 4.54545V5.66051H10.9052V4.54545H16.9847ZM13.2525 4.54545V10H11.7823V4.54545H13.2525ZM14.641 4.54545H16.1005V8.2919C16.1029 8.43632 16.1254 8.54877 16.168 8.62926C16.2106 8.70739 16.2745 8.76184 16.3597 8.79261C16.445 8.82339 16.5515 8.83878 16.6793 8.83878C16.7622 8.83878 16.8403 8.83523 16.9137 8.82812C16.9871 8.82102 17.051 8.8151 17.1055 8.81037V9.92188C16.98 9.96212 16.8415 9.99527 16.69 10.0213C16.5408 10.0497 16.3775 10.0639 16.1999 10.0639C15.7241 10.0639 15.3453 9.94081 15.0636 9.6946C14.7842 9.44839 14.6433 9.04119 14.641 8.47301V4.54545Z" fill="#838383"/>
+                        <path d="M6.10121 18.1065C5.54013 18.1065 5.05717 17.9929 4.65234 17.7656C4.24988 17.536 3.93975 17.2116 3.72195 16.7926C3.50414 16.3712 3.39524 15.8729 3.39524 15.2976C3.39524 14.7365 3.50414 14.2441 3.72195 13.8203C3.93975 13.3965 4.24633 13.0663 4.64169 12.8295C5.03942 12.5928 5.5058 12.4744 6.04084 12.4744C6.40069 12.4744 6.73568 12.5324 7.04581 12.6484C7.35831 12.7621 7.63056 12.9337 7.86257 13.1634C8.09695 13.393 8.27924 13.6818 8.40945 14.0298C8.53965 14.3755 8.60476 14.7803 8.60476 15.2443V15.6598H3.99893V14.7223H7.18075C7.18075 14.5045 7.1334 14.3116 7.03871 14.1435C6.94401 13.9754 6.81262 13.844 6.64453 13.7493C6.47881 13.6522 6.28587 13.6037 6.0657 13.6037C5.83606 13.6037 5.63246 13.657 5.4549 13.7635C5.27971 13.8677 5.1424 14.0085 5.04297 14.1861C4.94354 14.3613 4.89264 14.5566 4.89027 14.772V15.6634C4.89027 15.9332 4.93999 16.1664 5.03942 16.3629C5.14122 16.5594 5.28445 16.7109 5.46911 16.8175C5.65376 16.924 5.87275 16.9773 6.12607 16.9773C6.29415 16.9773 6.44804 16.9536 6.58771 16.9062C6.72739 16.8589 6.84695 16.7879 6.94638 16.6932C7.04581 16.5985 7.12157 16.4825 7.17365 16.3452L8.5728 16.4375C8.50178 16.7737 8.35618 17.0672 8.13601 17.3182C7.91821 17.5668 7.63648 17.7609 7.29084 17.9006C6.94756 18.0379 6.55102 18.1065 6.10121 18.1065Z" fill="#838383"/>
+                        <path d="M12.0462 14.5412V13.2805H16.9503V14.5412H12.0462ZM12.0462 16.8991V15.6385H16.9503V16.8991H12.0462Z" fill="#838383"/>
+                        </svg>                        
+                </span>
+                <span class="backspace" id="backspace">
+                    <svg width="27" height="19" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="9.33333" y="1.47827" width="16.6667" height="16.0435" rx="2" fill="black" stroke="#4DC722" stroke-width="2"/>
+                        <path d="M2.26555 7.96966C1.31576 8.76884 1.31576 10.2312 2.26554 11.0303L9.49012 17.1093C10.791 18.2039 12.7778 17.279 12.7778 15.5789L12.7778 3.42108C12.7778 1.72095 10.791 0.796148 9.49012 1.89075L2.26555 7.96966Z" fill="black" stroke="#4DC722" stroke-width="2"/>
+                        <rect x="10.3333" y="2.47827" width="13.037" height="14.0435" rx="1" fill="black"/>
+                        <path d="M17.9858 12.6165L12.8935 7.53267L14.0099 6.40341L19.1065 11.4957L17.9858 12.6165ZM14.0099 12.6165L12.8935 11.4957L17.9858 6.40341L19.1065 7.53267L14.0099 12.6165Z" fill="#4DC722"/>
+                        </svg>
+                        
+                </span>
+        </div>
+    </div>
+    <div class="buttons">
+        <div class="bg-black-2 rounded-50 centered"><p class="color-orange-1">C</p></div>
+        <div class="bg-black-2 rounded-50 centered"><p class="color-green-1">()</p></div>
+        <div class="bg-black-2 rounded-50 centered"><p class="color-green-1">%</p></div>
+        <div class="bg-black-2 rounded-50 centered"><p class="color-green-1">&divide;</p></div>
+        
+        <div class="bg-black-2 rounded-50 centered"><p class="color-white-1">7</p></div>
+        <div class="bg-black-2 rounded-50 centered"><p class="color-white-1">8</p></div>
+        <div class="bg-black-2 rounded-50 centered"><p class="color-white-1">9</p></div>
+        <div class="bg-black-2 rounded-50 centered"><p class="color-green-1">&times;</p></div>
+
+        <div class="bg-black-2 rounded-50 centered"><p class="color-white-1">4</p></div>
+        <div class="bg-black-2 rounded-50 centered"><p class="color-white-1">5</p></div>
+        <div class="bg-black-2 rounded-50 centered"><p class="color-white-1">6</p></div>
+        <div class="bg-black-2 rounded-50 centered"><p class="color-green-1">-</p></div>
+
+        <div class="bg-black-2 rounded-50 centered"><p class="color-white-1">1</p></div>
+        <div class="bg-black-2 rounded-50 centered"><p class="color-white-1">2</p></div>
+        <div class="bg-black-2 rounded-50 centered"><p class="color-white-1">3</p></div>
+        <div class="bg-black-2 rounded-50 centered"><p class="color-green-1">+</p></div>
+
+        <div class="bg-black-2 rounded-50 centered"><p class="color-white-1">+/-</p></div>
+        <div class="bg-black-2 rounded-50 centered"><p class="color-white-1">0</p></div>
+        <div class="bg-black-2 rounded-50 centered"><p class="color-white-1">,</p></div>
+        <div class="bg-green-1 rounded-50 centered"><p class="color-white-1">=</p></div>
+      
+    </div>
+</div>
+</body>
+<script src="script.js">
+
+</script>
+</html>
+
+    
+   
+    
+    
